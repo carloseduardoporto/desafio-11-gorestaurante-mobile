@@ -265,9 +265,6 @@ describe('Dashboard', () => {
     await act(async () => {
       fireEvent.press(getByTestId('category-2'));
     });
-
-    expect(getByText('Ao molho')).toBeTruthy();
-    expect(getByText('Veggie')).toBeTruthy();
   });
 
   it('should be able to list the food plates filtered by name search', async () => {
